@@ -2,7 +2,12 @@ from scapy.all import *
 import sys
 import time
 import random
-
+"""
+This is part of Mitnick's Christmas Day attack
+- Goal: execute a bash command on the target machine that adds tha attacker IP address to the list of trusted hosts
+- do this by pretending to be a trusted IP address
+- The targeted server is vulnerable because it use preditable sequence number
+"""
 SRC_PORT = 601
 DST_PORT = 514
 # python3 cp2.2.mitnick.py eth0 10.4.61.25 72.36.89.200
